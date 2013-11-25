@@ -5,24 +5,42 @@ import java.util.Map;
 
 public class Taxon {
 
+	private String name;
 	private Map<String, String> characters = new HashMap<String, String>();
+	private String id;
 	
 	public Taxon() { }	
 	
-	public Taxon(Map<String, String> characters) {
+	public Taxon(String id, String name, Map<String, String> characters) {
+		this.id = id;
+		this.name = name;
 		this.characters = characters;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public String getCharacterState(String characterName) {
-		return characters.get(characterName);
+		if(!characters.containsKey(characterName) || characters.get(characterName)==null)
+			return "";
+		return characters.get(characterName).trim();
 	}
 	
 	public void setCharacterState(String characterName, String characterState) {
 		characters.put(characterName, characterState);
 	}
 
-	public int getId() {
-		return -1;
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
 	}
 
 }
