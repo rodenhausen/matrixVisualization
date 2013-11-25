@@ -7,7 +7,7 @@ import viz.shared.model.Taxon;
 public interface IView {
 
 	public interface Presenter {
-
+		//test
 	}
 
 	void setPresenter(Presenter presenter);
