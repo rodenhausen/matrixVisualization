@@ -18,4 +18,8 @@ public class Presenter implements IView.Presenter {
 		view.setCharacterNames(characterNames);
 		view.setTaxons(taxons);
 	}
+	
+	public void onSave() {
+		
+	}
 }

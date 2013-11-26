@@ -1,13 +1,18 @@
 package viz.client.view;
-import viz.shared.model.Taxon;
 
-import com.google.gwt.dom.client.*;
+import com.google.gwt.dom.client.Document;
+import com.google.gwt.dom.client.NodeList;
+import com.google.gwt.dom.client.StyleElement;
+import com.google.gwt.dom.client.TableCellElement;
+import com.google.gwt.dom.client.TableRowElement;
+import com.google.gwt.dom.client.Text;
 import com.google.gwt.event.dom.client.ScrollEvent;
 import com.google.gwt.event.dom.client.ScrollHandler;
 import com.google.gwt.user.cellview.client.DataGrid;
 import com.google.gwt.user.client.ui.HeaderPanel;
 import com.google.gwt.user.client.ui.ScrollPanel;
 import com.google.gwt.view.client.ProvidesKey;
+
 
 /**
  *

@@ -4,10 +4,11 @@ import java.util.List;
 
 import viz.shared.model.Taxon;
 
+
 public interface IView {
 
 	public interface Presenter {
-		//test
+		void onSave();
 	}
 
 	void setPresenter(Presenter presenter);

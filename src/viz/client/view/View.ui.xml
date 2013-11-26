@@ -7,13 +7,11 @@
 
   <g:DockLayoutPanel
     unit="EM">
-    <!-- DataGrid. -->
     <g:center>
       <my:ScrolledGrid
         ui:field='dataGrid' />
     </g:center>
 
-    <!-- Pager. -->
     <g:south
       size="3">
       <g:HTMLPanel>
@@ -24,6 +22,11 @@
               align='center'>
               <c:SimplePager
                 ui:field='pager' />
+            </td>
+            <td>
+                <g:Button ui:field='saveButton'>
+                    Save
+                </g:Button>
             </td>
           </tr>
         </table>
